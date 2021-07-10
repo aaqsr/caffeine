@@ -1,10 +1,15 @@
 import * as React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { FC } from "react";
+import { NavBar } from "../components/NavBar";
 
-const IndexPage: React.FC = () => {
-    return (
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../styles/font.scss";
+
+const IndexPage: FC = () => (
+    <div>
+        <NavBar />
         <h1>hi</h1>
-    );
-}
+    </div>
+)
 
 export default IndexPage;
