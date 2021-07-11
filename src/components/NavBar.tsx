@@ -1,18 +1,24 @@
 import * as React from "react";
 import { useState } from "react";
+import { useEffect } from "react";
 import { FC } from "react";
 import { Navbar } from "react-bootstrap";
+import { Slide } from "react-reveal";
 
 import "../styles/navbar.scss";
 
 export const NavBar: FC = () => {
     const [visibility, setVisibility] = useState(false);
 
-    const changeVisibility = () => {
-        setVisibility(!!(window.scrollY >= 80))
-    }
+    useEffect(() => {
+        if (typeof window !== undefined) {
+            const changeVisibility = () => {
+                setVisibility(!!(window.scrollY >= 80));
+            }
 
-    window.addEventListener('scroll', changeVisibility)
+            window.addEventListener("scroll", changeVisibility);
+        }
+    }, []);
 
     if (visibility) {
         return (
