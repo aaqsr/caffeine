@@ -2,6 +2,7 @@ import * as React from "react";
 import { FC } from "react";
 import { Navbar } from "react-bootstrap";
 
+import '../styles/navbar.scss'
 
 export const NavBar: FC = () => (
     <Navbar bg="light" className="navbar">
