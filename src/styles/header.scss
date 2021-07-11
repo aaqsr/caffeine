@@ -1,7 +1,15 @@
 // .Header h1 {
 // }
 
-.center {
-    margin:auto;
-    text-align: center;
+.header{
+    .center {
+        margin:0 auto;
+        text-align: center;
+    }
+
+    .img {
+        width: auto;
+        max-width: 400px;
+        margin-top:10px;
+    }
 }
