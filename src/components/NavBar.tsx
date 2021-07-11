@@ -1,9 +1,12 @@
+import * as React from "react";
 import { FC } from "react";
 import { Navbar } from "react-bootstrap";
 
 
 export const NavBar: FC = () => (
-    <Navbar bg="light">
-        <Navbar.Brand href="#home">CAFFEINE</Navbar.Brand>
+    <Navbar bg="light" className="header">
+        <Navbar.Brand href="#home">
+            <h2>CAFFEINE</h2>
+        </Navbar.Brand>
     </Navbar>
 );
