@@ -9,7 +9,7 @@ const metaData = {
     url: "aaqsr.github.io/caffeine"
 };
 
-export const Header = () => (
+export const Header: React.FC = () => (
     <Helmet>
         <title>{metaData.title}</title>
         <meta name="title" content={metaData.title} />
