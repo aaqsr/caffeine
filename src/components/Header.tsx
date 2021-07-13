@@ -1,24 +1,39 @@
-import * as React from "react";
-import { FC } from "react";
-import { Jumbotron } from "react-bootstrap";
-import { Fade } from "react-reveal";
+import * as React from 'react';
+import { Helmet } from "react-helmet";
 
-import "../styles/header.scss";
-import Caffeine_structure from "../images/Caffeine_structure.svg";
+import img from '../images/CaffeineInCoffeeBeans.jpeg';
 
-export const Header: FC = () => (
-    <div className="header">
-        <Jumbotron fluid>
-            <h1 className="center">
-                <Fade bottom cascade>
-                    CAFFEINE
-                </Fade>
-            </h1>
-            <Fade bottom delay={1000}>
-                <div className="center">
-                    <img src={Caffeine_structure} className="img" alt="Caffeine Skeletal Formula"/>
-                </div>
-            </Fade>
-        </Jumbotron>
-    </div>
+const metaData = {
+    title: "Caffeine",
+    desc: "Caffeine, its chemical structure, what it does, and its side effects. A simple website made to accompany the video presentation for a chemistry class.",
+    url: "aaqsr.github.io/caffeine"
+};
+
+export const Header = () => (
+    <Helmet>
+        <title>{metaData.title}</title>
+        <meta name="title" content={metaData.title} />
+        <meta name="description" content={metaData.desc} />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={metaData.url} />
+        <meta property="og:title" content={metaData.title} />
+        <meta property="og:description" content={metaData.desc} />
+        <meta property="og:image" content={img} />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={metaData.url} />
+        <meta property="twitter:title" content={metaData.title} />
+        <meta property="twitter:description" content={metaData.desc} />
+        <meta property="twitter:image" content={img} />
+
+        <meta
+            name="keywords"
+            content="caffeine, coffee, chemistry, tea, chai, adenosine, sleep, caffeine addiction"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <meta name="author" content="Awab Q" />
+    </Helmet>
 );
