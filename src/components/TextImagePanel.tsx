@@ -7,9 +7,8 @@ import { Image } from "./BodyImage";
 interface PanelProps {
     heading: string,
     subheading?: string,
-    body: string,
-    children: any
-    image: any
+    children: any,
+    Image: string
 }
 
 export const Panel: React.FC<PanelProps> = props => (
@@ -18,7 +17,7 @@ export const Panel: React.FC<PanelProps> = props => (
             <Text heading={props.heading} subheading={props.subheading}>
                 {props.children}
             </Text>
-            <Image image={props.image}/>
+            <Image Image={props.Image}/>
         </Row>
     </Container>
 );

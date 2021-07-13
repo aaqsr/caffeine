@@ -9,13 +9,16 @@ import { Panel } from "../components/TextImagePanel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/general.scss";
 
+import CaffeineMolecule from "../images/Caffeine_structure.svg";
+
 const IndexPage: React.FC = () => (
     <>
         <Header />
         <NavBar />
         <Title />
         <DummyText />
-        <Panel>
+
+        <Panel heading="test" subheading="test2" Image={CaffeineMolecule}>
             <DummyText />
         </Panel>
     </>
