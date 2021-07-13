@@ -18,7 +18,9 @@ const IndexPage: React.FC = () => (
         <Title />
         <DummyText />
 
-        <Panel heading="test" subheading="test2" Image={CaffeineMolecule}>
+        <Panel heading="test" subheading="test2" image={CaffeineMolecule}>
+            <DummyText />
+            <DummyText />
             <DummyText />
         </Panel>
     </>

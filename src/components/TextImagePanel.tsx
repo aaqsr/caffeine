@@ -8,7 +8,7 @@ interface PanelProps {
     heading: string,
     subheading?: string,
     children: any,
-    Image: string
+    image: string
 }
 
 export const Panel: React.FC<PanelProps> = props => (
@@ -17,7 +17,7 @@ export const Panel: React.FC<PanelProps> = props => (
             <Text heading={props.heading} subheading={props.subheading}>
                 {props.children}
             </Text>
-            <Image Image={props.Image}/>
+            <Image image={props.image}/>
         </Row>
     </Container>
 );
