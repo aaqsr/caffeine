@@ -5,10 +5,12 @@ import { Text } from "./BodyText";
 import { Image } from "./BodyImage";
 
 
-export const Panel: React.FC = () => (
+export const Panel: React.FC = props => (
     <Container>
         <Row>
-            <Text />
+            <Text>
+                {props.children}
+            </Text>
             <Image />
         </Row>
     </Container>

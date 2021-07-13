@@ -14,8 +14,10 @@ const IndexPage: React.FC = () => (
         <Header />
         <NavBar />
         <Title />
-        {/* <DummyText /> */}
-        <Panel />
+        <DummyText />
+        <Panel>
+            <DummyText />
+        </Panel>
     </>
 )
 
