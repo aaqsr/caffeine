@@ -11,7 +11,7 @@ interface ImageProps {
 export const Image: React.FC<ImageProps> = props => {
 
     return (
-        <Col sm={props.colNum}>
+        <Col className="d-flex justify-content-center" md={props.colNum}>
             <span className="helper"></span>
             <img src={props.image} />
         </Col>

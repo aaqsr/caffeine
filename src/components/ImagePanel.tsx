@@ -1,5 +1,7 @@
 import * as React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Jumbotron, Container, Row, Col, Card } from "react-bootstrap";
+
+import '../styles/image.scss';
 
 interface panelProps {
     content: { img: string; heading?: string; caption?: string }[];
@@ -7,26 +9,33 @@ interface panelProps {
 
 export const ImagePanel: React.FC<panelProps> = (props) => (
     <>
-        <Container>
-            <Row>
-                {props.content.map((val) => (
-                    <Col>
-                        <Card style={{ width: "18rem" }}>
-                            <Card.Img
-                                variant="top"
-                                src={val.img}
-                                style={{ height: "12rem" }}
-                            />
-                            <Card.Body>
-                                <Card.Title>
-                                    <em>{val.heading}</em>
-                                </Card.Title>
-                                <Card.Text>{val.caption}</Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                ))}
-            </Row>
-        </Container>
+        <Jumbotron>
+            <Container>
+                <Row>
+                    {props.content.map((val) => (
+                        <Col className="d-flex justify-content-center">
+                            <Card
+                                style={{
+                                    width: "18rem",
+                                    verticalAlign: "middle"
+                                }}
+                            >
+                                <Card.Img
+                                    variant="top"
+                                    src={val.img}
+                                    style={{ height: "12rem" }}
+                                />
+                                <Card.Body>
+                                    <Card.Title>
+                                        <em>{val.heading}</em>
+                                    </Card.Title>
+                                    <Card.Text>{val.caption}</Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    ))}
+                </Row>
+            </Container>
+        </Jumbotron>
     </>
 );

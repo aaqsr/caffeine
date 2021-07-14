@@ -9,7 +9,7 @@ interface TextProps {
 }
 
 export const Text: React.FC<TextProps> = props => (
-    <Col sm={props.colNum}>
+    <Col md={props.colNum}>
         <h1>{props.heading}</h1>
         <h4>{props.subheading}</h4>
         {props.children}
