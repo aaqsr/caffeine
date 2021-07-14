@@ -3,8 +3,10 @@ import * as React from "react";
 import { Header } from "../components/Header";
 import { NavBar } from "../components/NavBar";
 import { Title } from "../components/Title";
-import { DummyText } from "../components/DummyText"
+import { DummyText } from "../components/DummyText";
 import { Panel } from "../components/TextImagePanel";
+import { ImagePanel } from "../components/ImagePanel";
+
 import { Container } from "react-bootstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -12,6 +14,9 @@ import "../styles/general.scss";
 
 import CaffeineMolecule from "../images/Caffeine_structure.svg";
 import Xanthine from "../images/xanthine.svg";
+import Purine from "../images/Purin_num2.svg";
+import Pyramadine from "../images/Pyrimidine_2D_numbers.svg";
+import Imadizole from "../images/Imidazole_2D_numbered.svg";
 
 const IndexPage: React.FC = () => (
     <>
@@ -64,7 +69,13 @@ const IndexPage: React.FC = () => (
                 Pyrimidine, and Imidazole.
             </p>
         </Panel>
-        
+        <ImagePanel
+            content={[
+                { img: Purine, heading: "Purine" },
+                { img: Pyramadine, heading: "Pyramadine" },
+                { img: Imadizole, heading: "Imadizole" }
+            ]}
+        />
         <Panel
             heading="test"
             subheading="test2"

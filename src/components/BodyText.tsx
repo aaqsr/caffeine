@@ -5,10 +5,11 @@ interface TextProps {
     children: any,
     heading: string,
     subheading?: string,
+    colNum: number
 }
 
 export const Text: React.FC<TextProps> = props => (
-    <Col sm={8}>
+    <Col sm={props.colNum}>
         <h1>{props.heading}</h1>
         <h4>{props.subheading}</h4>
         {props.children}

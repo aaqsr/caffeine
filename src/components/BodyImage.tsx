@@ -4,13 +4,14 @@ import { Col } from 'react-bootstrap';
 import '../styles/image.scss';
 
 interface ImageProps {
-    image: string
+    image: string,
+    colNum: number
 }
 
 export const Image: React.FC<ImageProps> = props => {
 
     return (
-        <Col sm={4}>
+        <Col sm={props.colNum}>
             <span className="helper"></span>
             <img src={props.image} />
         </Col>
