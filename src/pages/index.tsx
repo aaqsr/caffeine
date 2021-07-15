@@ -17,6 +17,8 @@ import Xanthine from "../images/xanthine.svg";
 import Purine from "../images/Purin_num2.svg";
 import Pyramadine from "../images/Pyrimidine_2D_numbers.svg";
 import Imadizole from "../images/Imidazole_2D_numbered.svg";
+import CoffeeBeans from "../images/CaffeineInCoffeeBeans.jpeg"
+import { ParallaxImg } from "../components/parallax";
 
 const IndexPage: React.FC = () => (
     <>
@@ -76,6 +78,15 @@ const IndexPage: React.FC = () => (
                 { img: Imadizole, heading: "Imadizole" }
             ]}
         />
+        <Panel
+            heading="test"
+            subheading="test2"
+            image={CaffeineMolecule}
+            ImgOnRight={true}
+        >
+            <DummyText />
+        </Panel>
+        <ParallaxImg img={CoffeeBeans} />
         <Panel
             heading="test"
             subheading="test2"
