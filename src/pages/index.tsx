@@ -6,19 +6,25 @@ import { Title } from "../components/Title";
 import { DummyText } from "../components/DummyText";
 import { Panel } from "../components/TextImagePanel";
 import { ImagePanel } from "../components/ImagePanel";
+import { ParallaxImg } from "../components/Parallax";
 
 import { Container } from "react-bootstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/general.scss";
 
+// @ts-ignore
 import CaffeineMolecule from "../images/Caffeine_structure.svg";
+// @ts-ignore
 import Xanthine from "../images/xanthine.svg";
+// @ts-ignore
 import Purine from "../images/Purin_num2.svg";
+// @ts-ignore
 import Pyramadine from "../images/Pyrimidine_2D_numbers.svg";
+// @ts-ignore
 import Imadizole from "../images/Imidazole_2D_numbered.svg";
+// @ts-ignore
 import CoffeeBeans from "../images/CaffeineInCoffeeBeans.jpeg"
-import { ParallaxImg } from "../components/parallax";
 
 const IndexPage: React.FC = () => (
     <>
