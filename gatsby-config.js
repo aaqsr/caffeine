@@ -11,10 +11,15 @@ module.exports = {
         {
             resolve: "gatsby-plugin-manifest",
             options: {
-                icon: "src/images/icon.png"
+                icon: "src/images/coffee.svg"
             }
         },
-        "gatsby-plugin-sharp",
+        {
+            resolve: "gatsby-plugin-sharp",
+            options: {
+                icon: "src/images/coffee.svg"
+            }
+        },
         "gatsby-transformer-sharp",
         {
             resolve: "gatsby-source-filesystem",
@@ -23,6 +28,6 @@ module.exports = {
                 path: "./src/images/"
             },
             __key: "images"
-        }
+        },
     ]
 };

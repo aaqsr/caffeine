@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet";
 
 // @ts-ignore
 import img from "../images/CaffeineInCoffeeBeans.jpeg";
+// @ts-ignore
+import favicon from "../images/coffee.svg";
 
 const metaData = {
     title: "Caffeine",
@@ -13,6 +15,7 @@ const metaData = {
 export const Header: React.FC = () => (
     <Helmet>
         <title>{metaData.title}</title>
+        <link rel="icon" href={favicon}/>
         <meta name="title" content={metaData.title} />
         <meta name="description" content={metaData.desc} />
 
