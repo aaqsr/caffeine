@@ -27,7 +27,7 @@ export const NavBar: FC = () => {
     if (visibility) {
         return (
             <div className="NavBar">
-                <Navbar fixed="top" bg="light" className="navbar">
+                <Navbar fixed="top" className="navbar">
                     <Slide left when={visibility2}>
                         <Navbar.Brand href="#home">
                             <h2>CAFFEINE</h2>

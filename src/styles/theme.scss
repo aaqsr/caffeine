@@ -1,0 +1,51 @@
+// @import "node_modules/compass-sass-mixins/lib/compass";
+// @import "node_modules/compass-mixins-fixed/lib/compass";
+// i uninstalled both
+
+// @mixin tea-background {
+//     @include filter-gradient(#f0b7a1, #995d21, vertical);
+//     @include background(linear-gradient(top,  rgba(240,183,161,1) 0%,rgba(215,164,125,0.9) 23%,rgba(192,146,91,0.93) 45%,rgba(153,93,33,1) 100%));
+// }
+
+// .jumbotron {
+//     @include tea-background();
+// }
+
+// this doesnt work for some reason
+
+// .jumbotron {
+//     background: -moz-linear-gradient(top,  rgba(240,183,161,1) 0%, rgba(215,164,125,0.9) 23%, rgba(192,146,91,0.93) 45%, rgba(153,93,33,1) 100%);
+//     background: -webkit-linear-gradient(top,  rgba(240,183,161,1) 0%,rgba(215,164,125,0.9) 23%,rgba(192,146,91,0.93) 45%,rgba(153,93,33,1) 100%);
+//     background: linear-gradient(to bottom,  rgba(240,183,161,1) 0%,rgba(215,164,125,0.9) 23%,rgba(192,146,91,0.93) 45%,rgba(153,93,33,1) 100%);
+//     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#995d21',GradientType=0 );
+// }
+
+.jumbotron {
+    // background: -moz-linear-gradient(top,  rgba(240,183,161,0.17) 0%, rgba(215,164,125,0.45) 27%, rgba(192,146,91,0.4) 52%, rgba(153,119,88,0.3) 100%);
+    // background: -webkit-linear-gradient(top,  rgba(240,183,161,0.17) 0%,rgba(215,164,125,0.45) 27%,rgba(192,146,91,0.4) 52%,rgba(153,119,88,0.3) 100%);
+    // background: linear-gradient(to bottom,  rgba(240,183,161,0.17) 0%,rgba(215,164,125,0.45) 27%,rgba(192,146,91,0.4) 52%,rgba(153,119,88,0.3) 100%);
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2bf0b7a1', endColorstr='#4d997758',GradientType=0 );
+
+    background: rgb(237,215,194);
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(237,215,194,1) 0%, rgba(153,121,94,1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(237,215,194,1) 0%,rgba(153,121,94,1) 100%);
+    background: radial-gradient(ellipse at center,  rgba(237,215,194,1) 0%,rgba(153,121,94,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edd7c2', endColorstr='#99795e',GradientType=1 );
+
+}
+
+body {
+    background: rgba(239, 209, 197, 0.17);
+}
+
+.card {
+
+}
+
+.navbar {
+    // background-color: rgba(239, 209, 197, 0.17);
+    background: -moz-linear-gradient(top,  rgba(240,183,161,0.17) 0%, rgba(215,164,125,0.45) 27%, rgba(192,146,91,0.4) 52%, rgba(153,119,88,0.3) 100%);
+    background: -webkit-linear-gradient(top,  rgba(240,183,161,0.17) 0%,rgba(215,164,125,0.45) 27%,rgba(192,146,91,0.4) 52%,rgba(153,119,88,0.3) 100%);
+    background: linear-gradient(to bottom,  rgba(240,183,161,0.17) 0%,rgba(215,164,125,0.45) 27%,rgba(192,146,91,0.4) 52%,rgba(153,119,88,0.3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2bf0b7a1', endColorstr='#4d997758',GradientType=0 );
+}

@@ -12,6 +12,7 @@ import { Container } from "react-bootstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/general.scss";
+import "../styles/theme.scss";
 
 // @ts-ignore
 import CaffeineMolecule from "../images/Caffeine_structure.svg";
@@ -29,7 +30,7 @@ import CoffeeBeans from "../images/CaffeineInCoffeeBeans.jpeg"
 const IndexPage: React.FC = () => (
     <>
         <Header />
-        <NavBar />
+        {/* <NavBar /> */}
         <Title />
 
         <Container>
