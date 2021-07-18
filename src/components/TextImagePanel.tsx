@@ -10,17 +10,17 @@ interface PanelProps {
     subheading?: string;
     children: any;
     image: string;
-    ImgOnRight?: boolean;
+    ImgOnLeft?: boolean;
 }
 
 export const Panel: React.FC<PanelProps> = (props) => {
     return (
         <Container>
             <Row>
-                {props.ImgOnRight ? (
-                    // on right
+                {props.ImgOnLeft ? (
+                    // on left
                     <>
-                        <Image image={props.image} colNum={4} isRight={true}/>
+                        <Image image={props.image} colNum={4} isLeft={true}/>
                         <Text
                             heading={props.heading}
                             subheading={props.subheading}
@@ -30,7 +30,7 @@ export const Panel: React.FC<PanelProps> = (props) => {
                         </Text>
                     </>
                 ) : (
-                    // on left
+                    // on right
                     <>
                         <Text
                             heading={props.heading}
@@ -49,5 +49,5 @@ export const Panel: React.FC<PanelProps> = (props) => {
 };
 
 Panel.defaultProps = {
-    ImgOnRight: false
+    ImgOnLeft: false
 };

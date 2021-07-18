@@ -98,7 +98,7 @@ const IndexPage: React.FC = () => (
             heading="Function of Caffeine"
             subheading="Fancy looking molecule, but what does it even do?"
             image={Adensosine}
-            ImgOnRight={true}
+            ImgOnLeft={true}
         >
             <p>
                 Caffeine does many things, mainly acting as a Central Nervous
@@ -130,7 +130,6 @@ const IndexPage: React.FC = () => (
             heading="Caffeine addiction"
             subheading="But why is everyone so addicted to it?"
             image={CoffeeMug}
-            ImgOnRight={true}
         >
             <p>
                 Firstly, despite the similarities between caffeine and other

@@ -7,14 +7,14 @@ import "../styles/image.scss";
 interface ImageProps {
     image: string;
     colNum: number;
-    isRight?: boolean;
+    isLeft?: boolean;
 }
 
 export const Image: React.FC<ImageProps> = (props) => {
     return (
         <Col className="d-flex justify-content-center" md={props.colNum}>
             <span className="helper"></span>
-            {props.isRight ? (
+            {props.isLeft ? (
                 <Fade left delay={500}>
                     <img src={props.image} />
                 </Fade>
@@ -27,5 +27,5 @@ export const Image: React.FC<ImageProps> = (props) => {
     );
 };
 Image.defaultProps = {
-    isRight: false
+    isLeft: false
 };
