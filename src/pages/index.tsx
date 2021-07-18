@@ -7,6 +7,7 @@ import { DummyText } from "../components/DummyText";
 import { Panel } from "../components/TextImagePanel";
 import { ImagePanel } from "../components/ImagePanel";
 import { ParallaxImg } from "../components/Parallax";
+import { Footer } from "../components/Footer";
 
 import { Container } from "react-bootstrap";
 
@@ -127,6 +128,7 @@ const IndexPage: React.FC = () => (
         >
             <DummyText />
         </Panel>
+        <Footer/>
     </>
 );
 
