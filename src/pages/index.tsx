@@ -29,6 +29,8 @@ import Imadizole from "../images/Imidazole_2D_numbered.svg";
 import Adensosine from "../images/Adenosin.svg";
 // @ts-ignore
 import CoffeeBeans from "../images/CaffeineInCoffeeBeans.jpeg";
+// @ts-ignore
+import CoffeeMug from "../images/Coffee.svg";
 
 const IndexPage: React.FC = () => (
     <>
@@ -106,9 +108,9 @@ const IndexPage: React.FC = () => (
                 Caffeine has a chemical structure similar to Adenosine, which
                 allows it to bind to its receptors instead, thus “blocking” it.
                 After entering the body, it is absorbed through the small
-                intestine and dissolved into the bloodstream after. And since the
-                molecule is both water and fat-soluble, it’s able to penetrate
-                the blood-brain barrier and enter the brain.
+                intestine and dissolved into the bloodstream after. And since
+                the molecule is both water and fat-soluble, it’s able to
+                penetrate the blood-brain barrier and enter the brain.
             </p>
             <p>
                 Turns out our neurons are embedded with these adenosine
@@ -121,14 +123,58 @@ const IndexPage: React.FC = () => (
         </Panel>
         <ParallaxImg img={CoffeeBeans} />
         <Panel
-            heading="test"
-            subheading="test2"
-            image={CaffeineMolecule}
+            heading="Caffeine addiction"
+            subheading="But why is everyone so addicted to it?"
+            image={CoffeeMug}
             ImgOnRight={true}
         >
-            <DummyText />
+            <p>
+                Firstly, despite the similarities between caffeine and other
+                drug addictions, some health care officials disagree as to
+                whether caffeine addiction can qualify as an actual addiction
+                because compared to other addictive substances, caffeine
+                stimulates the area of the brain linked to reward and motivation
+                to a lesser extent.
+            </p>
+            <p>
+                Caffeine does cause surges of dopamine within the brain, but it
+                is not a large enough surge to unbalance the reward system in
+                the brain like other drugs.
+            </p>
+            <p>
+                But, People can still develop a dependence on it quite quickly.
+                This is due to “tolerance”, wherein, after a while, a caffeine
+                user requires more and more of the substance to produce the same
+                effects of alertness.
+            </p>
+            <p>
+                Regular caffeine drinkers will gradually require higher amounts
+                to achieve the same “caffeine fix.” And, as mentioned before,
+                people who abruptly stop drinking caffeine after prolonged use
+                will start to suffer from withdrawal symptoms such as headaches.
+            </p>
         </Panel>
-        <Footer/>
+        <Container>
+            <h1>Conclusion</h1>
+            <p>
+                Overall, caffeine is a remarkable substance that has found its
+                way to iconicity throughout human history. It has driven
+                globalisation, and has defined several cultures from nordic
+                coffees, to british tea, to indian chai, to chinese greenteas.
+            </p>
+            <p>
+                Let’s not forget that the American war of independence started
+                when revolutionaries tossed british tea into the harbour. Or
+                that when an indian pilot was captured by pakistani forces, he
+                was offered a cup of chai. Or that british WW2 tanks, despite
+                their limited space, contain a tea kettle.
+            </p>
+            <p>
+                Caffeine is the most widely used legal drug on the planet. And
+                that status isn’t changing anytime soon.
+            </p>
+        </Container>
+        <Footer />
     </>
 );
 
