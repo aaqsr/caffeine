@@ -30,7 +30,7 @@ import Adensosine from "../images/Adenosin.svg";
 // @ts-ignore
 import CoffeeBeans from "../images/CaffeineInCoffeeBeans.jpeg";
 // @ts-ignore
-import CoffeeMug from "../images/Coffee.svg";
+import CoffeeMug from "../images/coffee.svg";
 
 const IndexPage: React.FC = () => (
     <>
