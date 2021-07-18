@@ -25,7 +25,9 @@ import Pyramadine from "../images/Pyrimidine_2D_numbers.svg";
 // @ts-ignore
 import Imadizole from "../images/Imidazole_2D_numbered.svg";
 // @ts-ignore
-import CoffeeBeans from "../images/CaffeineInCoffeeBeans.jpeg"
+import Adensosine from "../images/Adenosin.svg";
+// @ts-ignore
+import CoffeeBeans from "../images/CaffeineInCoffeeBeans.jpeg";
 
 const IndexPage: React.FC = () => (
     <>
@@ -86,12 +88,35 @@ const IndexPage: React.FC = () => (
             ]}
         />
         <Panel
-            heading="test"
-            subheading="test2"
-            image={CaffeineMolecule}
+            heading="Function of Caffeine"
+            subheading="Fancy looking molecule, but what does it even do?"
+            image={Adensosine}
             ImgOnRight={true}
         >
-            <DummyText />
+            <p>
+                Caffeine does many things, mainly acting as a Central Nervous
+                System stimulant. Its main job is to help you cram all night for
+                that test you forgot about because Lyceum's test timetable is a
+                complete mes- Sorry I meant, the primary function of Caffeine is
+                to reversibly block the action of adenosine on its receptors.
+                (image on right or top).
+            </p>
+            <p>
+                Caffeine has a chemical structure similar to Adenosine, which
+                allows it to bind to its receptors instead, thus “blocking” it.
+                After entering the body, it is absorbed through the small
+                intestine and dissolved into the bloodstream after. And since the
+                molecule is both water and fat-soluble, it’s able to penetrate
+                the blood-brain barrier and enter the brain.
+            </p>
+            <p>
+                Turns out our neurons are embedded with these adenosine
+                receptors. When adenosine binds to them, it releases proteins
+                that inhibit neurons, thus making you feel sleepy. By reducing
+                the concentration of available receptors, by binding to them,
+                caffeine slows down the rate of this reaction, allowing you to
+                feel less drowsy.
+            </p>
         </Panel>
         <ParallaxImg img={CoffeeBeans} />
         <Panel
