@@ -11,7 +11,7 @@ export const Footer: React.FC = () => (
             </Row>
             <Row>
                 <em>
-                    Also checkout: <a target="_blank" href="aaqsr.github.io/mathematika">mathematika.site</a>
+                    Also checkout: <a target="_blank" href="https://aaqsr.github.io/mathematika/">mathematika.site</a>
                 </em>
             </Row>
         </Container>
