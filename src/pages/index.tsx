@@ -31,6 +31,10 @@ import Adensosine from "../images/Adenosin.svg";
 import CoffeeBeans from "../images/CaffeineInCoffeeBeans.jpeg";
 // @ts-ignore
 import CoffeeMug from "../images/coffee.svg";
+// @ts-ignore
+import CoffeeBeansInMug from "../images/CoffeeBeansInCup.jpg"
+// @ts-ignore
+import PersonDrinkingCaffeine from "../images/PersonDrinkingCaffeine.jpg";
 
 const IndexPage: React.FC = () => (
     <>
@@ -43,7 +47,7 @@ const IndexPage: React.FC = () => (
                 Caffeine is a magical molecule given to us by sorcerers that
                 more than half the world is addicted to, and I swear that list
                 doesn’t include me, I can live without caffeine, I’m not
-                addicted sips cup-
+                addicted <em>sips cup</em>-
             </p>
             <p>
                 It is no exaggeration to say that the world, for the most part,
@@ -60,7 +64,7 @@ const IndexPage: React.FC = () => (
                 its withdrawal symptoms of headaches, and irritability.
             </p>
         </Container>
-
+        <ParallaxImg img={CoffeeBeans} />
         <Panel
             heading="What does caffeine even do?"
             subheading="I mean we're all kinda addicted to it so like"
@@ -121,7 +125,7 @@ const IndexPage: React.FC = () => (
                 feel less drowsy.
             </p>
         </Panel>
-        <ParallaxImg img={CoffeeBeans} />
+        <ParallaxImg img={CoffeeBeansInMug} />
         <Panel
             heading="Caffeine addiction"
             subheading="But why is everyone so addicted to it?"
@@ -154,6 +158,7 @@ const IndexPage: React.FC = () => (
                 will start to suffer from withdrawal symptoms such as headaches.
             </p>
         </Panel>
+        <ParallaxImg img={PersonDrinkingCaffeine} />
         <Container>
             <h1>Conclusion</h1>
             <p>

@@ -45,6 +45,7 @@ export const Panel: React.FC<PanelProps> = (props) => {
             </Row>
         </Container>
     );
+
 };
 
 Panel.defaultProps = {

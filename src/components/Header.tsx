@@ -1,11 +1,12 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 
+// @ts-ignore
 import img from "../images/CaffeineInCoffeeBeans.jpeg";
 
 const metaData = {
     title: "Caffeine",
-    desc: "Caffeine, its chemical structure, what it does, and its side effects. A simple website made to accompany the video presentation for a chemistry class.",
+    desc: "Caffeine, its chemical structure, what it does, and addiction to it. A simple website made to accompany the video presentation for a chemistry class.",
     url: "aaqsr.github.io/caffeine"
 };
 
