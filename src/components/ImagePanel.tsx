@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Jumbotron, Container, Row, Col, Card } from "react-bootstrap";
-import   HeadShake  from 'react-reveal/Tada';
+import   Tada  from 'react-reveal/Tada';
 
 import '../styles/image.scss';
 
@@ -21,13 +21,13 @@ export const ImagePanel: React.FC<panelProps> = (props) => (
                                     verticalAlign: "middle"
                                 }}
                             >
-                                <HeadShake delay={index*500 + 100}>
+                                <Tada delay={index*500 + 200}>
                                     <Card.Img
                                         variant="top"
                                         src={val.img}
                                         style={{ height: "12rem" }}
                                     />
-                                </HeadShake>
+                                </Tada>
                                 <Card.Body>
                                     <Card.Title>
                                         <em>{val.heading}</em>
