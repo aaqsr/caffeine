@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Fade } from "react-reveal";
 
 import { Text } from "./BodyText";
 import { Image } from "./BodyImage";
@@ -19,7 +20,7 @@ export const Panel: React.FC<PanelProps> = (props) => {
                 {props.ImgOnRight ? (
                     // on right
                     <>
-                        <Image image={props.image} colNum={4} />
+                        <Image image={props.image} colNum={4} isRight={true}/>
                         <Text
                             heading={props.heading}
                             subheading={props.subheading}
@@ -29,7 +30,7 @@ export const Panel: React.FC<PanelProps> = (props) => {
                         </Text>
                     </>
                 ) : (
-                    // on left 
+                    // on left
                     <>
                         <Text
                             heading={props.heading}
