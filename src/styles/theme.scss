@@ -39,13 +39,5 @@ body {
 }
 
 .card {
-
-}
-
-.navbar {
-    // background-color: rgba(239, 209, 197, 0.17);
-    background: -moz-linear-gradient(top,  rgba(240,183,161,0.17) 0%, rgba(215,164,125,0.45) 27%, rgba(192,146,91,0.4) 52%, rgba(153,119,88,0.3) 100%);
-    background: -webkit-linear-gradient(top,  rgba(240,183,161,0.17) 0%,rgba(215,164,125,0.45) 27%,rgba(192,146,91,0.4) 52%,rgba(153,119,88,0.3) 100%);
-    background: linear-gradient(to bottom,  rgba(240,183,161,0.17) 0%,rgba(215,164,125,0.45) 27%,rgba(192,146,91,0.4) 52%,rgba(153,119,88,0.3) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2bf0b7a1', endColorstr='#4d997758',GradientType=0 );
+    background: rgba(237,215,194,0.3) 
 }

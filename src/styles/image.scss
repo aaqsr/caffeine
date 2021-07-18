@@ -3,6 +3,10 @@ img {
     margin: 0 auto;
 }
 
+.container img {
+    min-width: 90%;
+}
+
 .helper {
     display: inline-block;
     height: 100%;

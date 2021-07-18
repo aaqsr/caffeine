@@ -65,7 +65,7 @@ const IndexPage: React.FC = () => (
                 In the chemical world, Caffeine is more “famously” known as
                 *clears throat* 1,3,7-Trimethylxanthine. As the organic
                 compound’s name suggests, it is derived from Xanthine (image on
-                left).
+                left or bottom).
             </p>
             <p>
                 As you can see, in caffeine, 3 methyl groups substitute the 1st,

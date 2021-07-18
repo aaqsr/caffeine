@@ -17,6 +17,7 @@ export const Panel: React.FC<PanelProps> = (props) => {
         <Container>
             <Row>
                 {props.ImgOnRight ? (
+                    // on right
                     <>
                         <Image image={props.image} colNum={4} />
                         <Text
@@ -28,6 +29,7 @@ export const Panel: React.FC<PanelProps> = (props) => {
                         </Text>
                     </>
                 ) : (
+                    // on left 
                     <>
                         <Text
                             heading={props.heading}
