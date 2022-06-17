@@ -7,3 +7,5 @@
 [![Gatsby Publish](https://github.com/aaqsr/caffeine/actions/workflows/main.yml/badge.svg)](https://github.com/aaqsr/caffeine/actions/workflows/main.yml)
 
 A simple, modular, and beautiful website built using ReactJS and GatsbyJS, for a chemistry project in class. Displaying some information about Caffeine in an animated, interactive, and responsive way.
+
+This website is hosted on ghpages, and automatically compiles and updates on a git push. Powered by gh actions ⚡️
